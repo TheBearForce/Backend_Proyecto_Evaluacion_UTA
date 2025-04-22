@@ -1,0 +1,74 @@
+﻿@model Backend_Proyecto.Models.Notas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Notas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Estudiante.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estudiante.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asistencia1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asistencia1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nota2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asistencia2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asistencia2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Supletorio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supletorio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NotaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
