@@ -1,0 +1,28 @@
+Paso a Paso
+-Instalar Node js para levantar los servicios 
+enlace: https://nodejs.org/es/blog/release/v22.11.0 
+-Instalar Visual Code
+enlace: https://code.visualstudio.com
+
+---------------------Tutorial-----------------------------------
+
+-Descargas el Repositorio BaseUTA y extraes en un carpeta backup en el disco local C y se deja solamente la base de datos(el archivo rar puedes eliminarlo).
+
+	*En SQl Management enlazas en el base datos BaseUTA.
+	*Y compiamos el nombre del servidor.
+
+-Descargas el Repositorio BackEnd_Protect y enlazas al servidor mediante sql management mediante el nombre del servidor y damos permisos
+
+	*Cambiamos la direcion del servidor por la nueva cadena de conexion(Esto se encuentra en la carpeta Web.config => name=BaseUTA y se elmina la cadena de conexion
+	 antigua y de dejamos extamente de esta forma "Data Source=DESKTOP-DA6NSSN;Initial Catalog=BaseUTA;Integrated Security=True;" lo demas se debe eliminar ya que no 
+	 se necesita)y ejecutamos.
+
+-Ejecutamos y vemos las apis con sus respectivos Metodos.
+
+-Pasamos al .rar Frontend y entramos en la carpeta en la parte superior selecciona y escribe cmd.
+
+-Mediante la ruta creada en el cmd ejecutamos el codigo code .(esto nos permitira abrir Visual Code).
+
+-Al abrir la pestaña en su teclado ejecutamos CONTROL+SHIFT+Ñ para entrar a la terminar y finalizamos con el codigo node server.js(esto abrira la aplicacion en la pagina web).
+
+-Disfruta del Aplicativo
